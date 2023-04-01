@@ -9,13 +9,24 @@
     
 // };
 
+// /*
+// - remove only spacing from the sides
+// - split the string by space
+// - return length of last word
+// */
+// function lengthOfLastWord(s: string): number {
+//     const arr : Array<string> = s.trim().split(' ');
+//     return arr[arr.length - 1].length;
+    
+// };
+
 /*
-- remove only spacing from the sides
+- remove only spacing from only the end
 - split the string by space
 - return length of last word
 */
 function lengthOfLastWord(s: string): number {
-    const arr : Array<string> = s.trim().split(' ');
+    const arr : Array<string> = s.trimEnd().split(' ');
     return arr[arr.length - 1].length;
     
 };
